@@ -46,7 +46,8 @@ Sugestão: https://balsamiq.com/products/mockups/<br>
     
     
 #### 4.2 QUAIS PERGUNTAS PODEM SER RESPONDIDAS COM O SISTEMA PROPOSTO?
-    a) O sistema proposto poderá fornecer quais tipos de relatórios e informaçes? 
+    a)Como não haverá conflitos de semáforos abertos ao mesmo tempo?
+    Os Bots estão todos conectados a um rede que se comunicam entre si trocando informações, as configurações inicialmetne pré programadas servem como base. Os bots com uma conexão saberão a hora certa de abrir um semáforo, depois de algum cruzamento ou rua movimentada se estiver ao redor da tragetória.
     b) Crie uma lista com os 10 principais relatórios que poderão ser obtidos por meio do sistema proposto!
     
 >## Marco de Entrega 01 em: (24/03/2018)<br>
