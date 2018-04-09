@@ -46,9 +46,12 @@ Sugestão: https://balsamiq.com/products/mockups/<br>
     
     
 #### 4.2 QUAIS PERGUNTAS PODEM SER RESPONDIDAS COM O SISTEMA PROPOSTO?
-    a)Como não haverá conflitos de semáforos abertos ao mesmo tempo?
-    Os Bots estão todos conectados a um rede que se comunicam entre si trocando informações, as configurações inicialmetne pré programadas servem como base. Os bots com uma conexão saberão a hora certa de abrir um semáforo, depois de algum cruzamento ou rua movimentada se estiver ao redor da tragetória.
-b) Como as informações serão armazenadas para se adaptarem ao fluxo?
+    a)Como não haverá conflitos de semáforos abertos ao mesmo tempo na mesma tragetória?
+    Os Bots estão todos conectados a um rede wi-fi que estabelecem sinal no servidor central se comunicando entre si e trocando informações, as configurações inicialmetne pré programadas servem como base. Os bots com uma conexão saberão a hora certa de abrir um semáforo, depois de algum cruzamento ou rua movimentada se estiver ao redor da tragetória.
+    b) Como as informações serão armazenadas para se adaptarem ao fluxo?
+    Cada Bot terá sua função determinada em certo local, ele capta as informações necessárias e envia para o servidor central e para outros Bots. Essa informações serão organizadas pelo número de identificação que cada Bot receberá,e a partir delas será possível fazer a localização. Como a taxa de atualizações são a cada 5 segundos, a cada 5 segundos novas linhas de informações serão criadas. Acessando pelo computador, será possível ver as informações que foram armazenas em determinado horário ou dia, enquanto ela mesma produz mais informações que são possíveis serem vistas em tempo real.
+    c)Os operários do sistema de liberdade para alterarem quais funções?
+    Os operários credenciados pelo empresa tem autorização para controlar os bots que percebem que estão com mal funcionamento. Em casos maiores há a possibilidade, em caso de algume evento especial na localidade, alterar as informações e até programar uma ação para ser executado naquele instante, e baseada nessas informações adquiridas manualmente,os bots adaptarão sua maneira de agir para aquele momento,após o termino os bots voltam a configuração normal sem precisar de operários alterarem manualmente. Além disso ,os operários tem acesso a todas as informações captadas de todos os Bots de qualquer lugar do Espírito Santo.
 
     
 >## Marco de Entrega 01 em: (24/03/2018)<br>
