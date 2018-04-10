@@ -52,9 +52,9 @@ Sugestão: https://balsamiq.com/products/mockups/<br>
     Cada Bot terá sua função determinada em certo local, ele capta as informações necessárias e envia para o servidor central e para outros Bots. Essa informações serão organizadas pelo número de identificação que cada Bot receberá,e a partir delas será possível fazer a localização. Como a taxa de atualizações são a cada 5 segundos, a cada 5 segundos novas linhas de informações serão criadas. Acessando pelo computador, será possível ver as informações que foram armazenas em determinado horário ou dia, enquanto ela mesma produz mais informações que são possíveis serem vistas em tempo real.
     c)Os operários do sistema de liberdade para alterarem quais funções?
     Os operários credenciados pelo empresa tem autorização para controlar os bots que percebem que estão com mal funcionamento. Em casos maiores há a possibilidade, em caso de algume evento especial na localidade, alterar as informações e até programar uma ação para ser executado naquele instante, e baseada nessas informações adquiridas manualmente,os bots adaptarão sua maneira de agir para aquele momento,após o termino os bots voltam a configuração normal sem precisar de operários alterarem manualmente. Além disso ,os operários tem acesso a todas as informações captadas de todos os Bots de qualquer lugar do Espírito Santo.
-    d ) Como serão obtidas as informações necessárias para que os semáforos funcionem de forma inteligente? 
+    d) Como serão obtidas as informações necessárias para que os semáforos funcionem de forma inteligente? 
     Atravez de marcadores(sensores) no asfalto que contam a passagem dos veículos e os dados são enviados para um banco de dados.
-    e ) Como é determinado qual via o semáforo deve permanecer mais tempo aberto? 
+    e) Como é determinado qual via o semáforo deve permanecer mais tempo aberto? 
     Se os semáforos identificam que vários carros passam pelos sensores com uma velocidade de 80km/h, o sistema identificará, baseados nos mapas, que aquele trageto demanda de mais velocidade e menos tempo parado em determinado horário, mas tendo que acrescentar tempo em outro semáforo, assim se comunicando entre si e analisar qual rotas próximas menos utilizada no momento para adicionar o tempo e controlar o trânsito.    
 
     
