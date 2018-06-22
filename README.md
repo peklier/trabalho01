@@ -5,15 +5,19 @@ Trabalho desenvolvido durante a disciplina de Banco de Dados do Integrado
 
 ### 1. COMPONENTES<br>
 Integrantes do grupo<br>
-Christian Lopes de Souza:christianlopessouza@gmail.com<br>
-Gabriel de Souza Klier Conceição:desouzagabriel80@gmail.com<br>
+Christian Lopes de Souza: christianlopessouza@gmail.com<br>
+Gabriel de Souza Klier Conceição: desouzagabriel80@gmail.com<br>
 ...
 
 ### 2.INTRODUÇÃO E MOTIVAÇAO<br>
 Este documento contém a especificação do projeto do banco de dados <semaforup> 
 <br>e motivação da escolha realizada. <br>
 
-> O projeto Semaforup tem como princípio melhorar o trânsito, deixando-o mais fluido e mais rápido. A sincronização dos semáforos de um percurso para evitar interromper o trânsito em cada esquina. A nova tecnologia também permite que um operador de trânsito opere os sinais por meio de computadores ou mesmo de um celular. A possibilidade é útil, por exemplo, para orientar desvios no trânsito, colocar os sinais no piscar amarelo ou acionar o verde e o vermelho por tempo indeterminado. Sua utilidade não irá só agilisar os motoristas, assim também, como  os pedestres, que em grandes avenidas movimentas não precisarão esperar um grande tempo para atravessar a rua. Os sensores, com sua eficiência captarão, por meio de sensores a movimentação de pedestres e veículos, evitando acidentes e simultaneamente prezando pela rapidez e dinamização.
+> As formas de tirar uma carteira de habilitação nos dias atuais ficaram facilitadas, logo prevendo que a idade mínima é de 18 anos, logo a quantidade de pessoas que possuem veículos acabam por aumentar e assim tende a continuar.
+Com a facilidade de comprar um veículo, usado ou novo, seja por meio de longos financiamentos ou não. Existem por volta de 42 milhões de Carteiras de Motoristas ativas no Brasil.
+Com o forte avanço e o crescente número de veículos, as ruas devem estar devidademente preparadas para se adaptar a um grande volume de tráfego que varia diariamente dependendo do momento. Para isto, a forma de semáforos com tempo fixo já não vai ser a melhor proposta para conter o atraso no transito em função da demanda. Sendo assim, nosso trabalho visa o desenvolvimento de um semáforo inteligente e totalmente autônomo que conduza o tráfego de uma forma que atenda a demanda de veículos locais.
+Em um cruzamento de duas ou mais vias existem movimentos que não podem ser feitos simultaneamente, pois podem se colidir, estabelencendo normas de controle de direito de passagem com o objetivo de melhorar o fluxo do tráfego e reduzir os riscos de acidentes.
+
  
 
 ### 3.MINI-MUNDO<br>
