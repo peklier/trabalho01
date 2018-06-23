@@ -5,8 +5,8 @@ Trabalho desenvolvido durante a disciplina de Banco de Dados do Integrado
 
 ### 1. COMPONENTES<br>
 Integrantes do grupo<br>
-Christian Lopes de Souza:christianlopessouza@gmail.com<br>
-Gabriel de Souza Klier Conceição:desouzagabriel80@gmail.com<br>
+Christian Lopes de Souza: christianlopessouza@gmail.com<br>
+Gabriel de Souza Klier Conceição: desouzagabriel80@gmail.com<br>
 ...
 
 ### 2.INTRODUÇÃO E MOTIVAÇAO<br>
