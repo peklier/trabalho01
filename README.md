@@ -69,7 +69,7 @@ Sugestão: https://balsamiq.com/products/mockups/<br>
         * O protótipo deve possui no mínimo duas relações N para N
         * o mínimo de entidades do modelo conceitual será igual a 5
         
-![Alt text](https://raw.githubusercontent.com/semaforup/trabalho01/master/imagens/Conceitual_1.png "Modelo Conceitual")
+![Alt text](https://raw.githubusercontent.com/semaforup/trabalho01/master/imagens/modelo_conceitual_empresa.png "Modelo Conceitual")
     
     B) NOTACAO UML (Caso esteja fazendo a disciplina de analise)
     C) QUALIDADE 
@@ -100,25 +100,18 @@ Sugestão: https://balsamiq.com/products/mockups/<br>
 
 >## Marco de Entrega 01 em: (12/05/2018)<br>
 ### 6	MODELO LÓGICO<br>
-        a) inclusão do modelo lógico do banco de dados
-        b) verificação de correspondencia com o modelo conceitual 
-        (não serão aceitos modelos que não estejam em conformidade)
+(https://github.com/semaforup/trabalho01/blob/master/imagens/mapa_logico_mdbd.png?raw=true "Modelo Lógico")
 
 ### 7	MODELO FÍSICO<br>
-        a) inclusão das instruções de criacão das estruturas DDL 
-        (criação de tabelas, alterações, etc..)          
+(https://github.com/semaforup/trabalho01/blob/master/arquivos/mapa%20fisico.txt "Modelo Físico")          
         
 ### 8	INSERT APLICADO NAS TABELAS DO BANCO DE DADOS<br>
 #### 8.1 DETALHAMENTO DAS INFORMAÇÕES
-        a) inclusão das instruções de inserção dos dados nas tabelas criadas pelo script de modelo físic
-        b) formato .SQL
+(https://github.com/semaforup/trabalho01/blob/master/arquivos/inserts.txt "Inserimento de Informações")       
 
 #### 8.2 INCLUSÃO DO SCRIPT PARA CRIAÇÃO DE TABELA E INSERÇÃO DOS DADOS
-        a) Junção dos scripts anteriores em um único script 
-        (create para tabelas e estruturas de dados + dados a serem inseridos)
-        b) Criar um novo banco de dados para testar a restauracao 
-        (em caso de falha na restauração o grupo não pontuará neste quesito)
-        c) formato .SQL
+(https://github.com/semaforup/trabalho01/blob/master/arquivos/insert_fisico "Insert+Modfis")
+
 #### 8.3 INCLUSÃO DO SCRIPT PARA EXCLUSÃO DE TABELAS EXISTENTES, CRIAÇÃO DE TABELA NOVAS E INSERÇÃO DOS DADOS
         a) Junção dos scripts anteriores em um único script 
         (Drop table + Create de tabelas e estruturas de dados + dados a serem inseridos)
