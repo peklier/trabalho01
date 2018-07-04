@@ -49,16 +49,11 @@ Sugestão: https://balsamiq.com/products/mockups/<br>
     
     
 #### 4.2 QUAIS PERGUNTAS PODEM SER RESPONDIDAS COM O SISTEMA PROPOSTO?
-    a)Como não haverá conflitos de semáforos abertos ao mesmo tempo na mesma tragetória?
-    Os Bots estão todos conectados a um rede wi-fi que estabelecem sinal no servidor central se comunicando entre si e trocando informações, as configurações inicialmetne pré programadas servem como base. Os bots com uma conexão saberão a hora certa de abrir um semáforo, depois de algum cruzamento ou rua movimentada se estiver ao redor da tragetória.
+    a) Como não haverá conflitos de semáforos abertos ao mesmo tempo na mesma tragetória?
     b) Como as informações serão armazenadas para se adaptarem ao fluxo?
-    Cada Bot terá sua função determinada em certo local, ele capta as informações necessárias e envia para o servidor central e para outros Bots. Essa informações serão organizadas pelo número de identificação que cada Bot receberá,e a partir delas será possível fazer a localização. Como a taxa de atualizações são a cada 5 segundos, a cada 5 segundos novas linhas de informações serão criadas. Acessando pelo computador, será possível ver as informações que foram armazenas em determinado horário ou dia, enquanto ela mesma produz mais informações que são possíveis serem vistas em tempo real.
-    c)Os operários do sistema de liberdade para alterarem quais funções?
-    Os operários credenciados pelo empresa tem autorização para controlar os bots que percebem que estão com mal funcionamento. Em casos maiores há a possibilidade, em caso de algume evento especial na localidade, alterar as informações e até programar uma ação para ser executado naquele instante, e baseada nessas informações adquiridas manualmente,os bots adaptarão sua maneira de agir para aquele momento,após o termino os bots voltam a configuração normal sem precisar de operários alterarem manualmente. Além disso ,os operários tem acesso a todas as informações captadas de todos os Bots de qualquer lugar do Espírito Santo.
+    c) Como os operários do sistema de liberdade para alterarem quais funções?
     d) Como serão obtidas as informações necessárias para que os semáforos funcionem de forma inteligente? 
-    Atravez de marcadores(sensores) no asfalto que contam a passagem dos veículos e os dados são enviados para um banco de dados.
     e) Como é determinado qual via o semáforo deve permanecer mais tempo aberto? 
-    Se os semáforos identificam que vários carros passam pelos sensores com uma velocidade de 80km/h, o sistema identificará, baseados nos mapas, que aquele trageto demanda de mais velocidade e menos tempo parado em determinado horário, mas tendo que acrescentar tempo em outro semáforo, assim se comunicando entre si e analisar qual rotas próximas menos utilizada no momento para adicionar o tempo e controlar o trânsito.    
 
     
 >## Marco de Entrega 01 em: (24/03/2018)<br>
@@ -85,7 +80,34 @@ Sugestão: https://balsamiq.com/products/mockups/<br>
     EXEMPLO:
     CLIENTE: Tabela que armazena as informações relativas ao cliente<br>
     CPF: campo que armazena o número de Cadastro de Pessoa Física para cada cliente da empresa.<br>
+    numero_semaforo: Campo que armazena o código de identificação do semáforo
+    rua_semaforo: Campo que armazena o nome da rua em que o semáforo foi localizado
+    bairro_semaforo: Campo que armazena o nome do bairro em que o semáforo foi localizado
+    cidade_semaforo: Campo que armazena o nome da cidade em que o semáforo foi localizado
+    cod_rua: Campo que armazena o código de identificação referente a rua em que o semáforo foi localizado
+    cod_bairro: Campo que armazena o código de identificação referente a rua em que o semáforo foi localizado
+    cod_cidade: Campo que armazena o código de identificação referente ao bairro em que o semáforo foi localizado
+    cod_geral: Campo que armazena o código dos três códigos (cod_cidade,cod_bairro,cod_rua) em um só
+    cod_sensor: Campo que armazena o código dos sensores relacionados ao semáforo
+    quant_semaforo_vinc: Campo que armazena a quantidade de semáforos que estão vinculado a um determinado semáforo
+    quant_carros_rua_min: Campo que a armazena a quantidade de carros que passam em uma rua por minuto
+    quant_carros_rua_hr_med: Campo que a armazena a média de carros que passam em uma rua por hora   
+    med_quant_carros_dia: Campo que a armazena a média de carros que passam em uma rua por dia 
+    minuto: Campo que armazena o minuto em que o sensor faz o cálculo e a analise da rua
+    hora: Campo que armazena a hora em que o sensor faz o cálculo e a analise da rua
+    velocid_med_rua: Campo que a armazena a velocidade dos carros que passam na rua por minuto
+    tempo_fechado: Campo que armazena o tempo, baseado nos cálculos , que o semáforo ficará fechado
+    nome_usuario_comum: Campo que armazena o nome de usuário dos usuários comuns, ou seja, que não tem controle sobre nenum dos semáforos
+    senha_usuario_comum: Campo que armazena o nome dos usuários comuns
+    nome_operario: Campo que armazena o nome de usuário dos operários, esses que tinham controle sobre os semáforos
+    senha_operario: Campo que armazena a senha dos operários 
+    data_analise: Campo que armazena a data em que foi feita analise por minuto
+    cod_usuario: Campo que armazena o código de identificação dos usuarios comuns
+    cod_operario: Campo que armazena o código de identificação dos operários
 
+
+    
+    
 >## Marco de Entrega 01 em: (12/05/2018)<br>
 ### 6	MODELO LÓGICO<br>
 (https://github.com/semaforup/trabalho01/blob/master/imagens/mapa_logico_mdbd.png?raw=true "Modelo Lógico")
