@@ -106,17 +106,17 @@ Sugestão: https://balsamiq.com/products/mockups/<br>
 (https://github.com/semaforup/trabalho01/blob/master/imagens/mapa_logico_mdbd.png?raw=true "Modelo Lógico")
 
 ### 7	MODELO FÍSICO<br>
-(https://github.com/semaforup/trabalho01/blob/master/arquivos/mapa%20fisico.txt "Modelo Físico")          
+(https://github.com/semaforup/trabalho01/blob/master/arquivos/3 "Modelo Físico")          
         
 ### 8	INSERT APLICADO NAS TABELAS DO BANCO DE DADOS<br>
 #### 8.1 DETALHAMENTO DAS INFORMAÇÕES
 (https://github.com/semaforup/trabalho01/blob/master/arquivos/inserts.txt "Inserimento de Informações")       
 
 #### 8.2 INCLUSÃO DO SCRIPT PARA CRIAÇÃO DE TABELA E INSERÇÃO DOS DADOS
-(https://github.com/semaforup/trabalho01/blob/master/arquivos/insert_fisico "Insert+Modfis")
+(https://github.com/semaforup/trabalho01/blob/master/arquivos/2 "Insert+Modfis")
 
 #### 8.3 INCLUSÃO DO SCRIPT PARA EXCLUSÃO DE TABELAS EXISTENTES, CRIAÇÃO DE TABELA NOVAS E INSERÇÃO DOS DADOS
-(https://github.com/semaforup/trabalho01/blob/master/arquivos/drop_insert_fisico.txt "Insert,Modelo Fisico,Drop")
+(https://github.com/semaforup/trabalho01/blob/master/arquivos/1 "Insert,Modelo Fisico,Drop")
 
 
 ### 9	TABELAS E PRINCIPAIS CONSULTAS<br>
