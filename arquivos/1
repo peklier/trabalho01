@@ -1,0 +1,123 @@
+
+CREATE TABLE usuário (
+    nome_usuario varchar(40),
+    senha_usuario varchar(50),
+    cod_usuario int
+);
+ 
+ALTER TABLE Usuário ADD CONSTRAINT codigo PRIMARY KEY (cod_usuario);
+
+CREATE TABLE semáforo (
+    numero_semaforo int PRIMARY KEY,
+    rua_semaforo int,
+    bairro_semaforo int,
+    cidade_semaforo int,
+    quant_sema_vinc int,
+    tempo_fechado int
+);
+
+CREATE TABLE Rua (
+    cod_rua int PRIMARY KEY,
+    nome_rua varchar(50)
+);
+
+CREATE TABLE Cidade (
+    cod_cidade int PRIMARY KEY,
+    nome_cidade varchar(50)
+);
+
+CREATE TABLE Bairro (
+    cod_bairro int PRIMARY KEY,
+    nome_bairro varchar(50)
+);
+
+CREATE TABLE Sensor (
+    minuto_reg int,
+    hora_reg int,
+    quant_carro_rua_min int,
+    quant_carro_hr_med int,
+    med_quant_carro_dia int,
+    data_analise date,
+    velocidade_med int,
+    cod_sensor int PRIMARY KEY
+);
+ 
+ALTER TABLE Semáforo ADD CONSTRAINT FK_Semáforo_1
+    FOREIGN KEY (bairro_semaforo)
+    REFERENCES Bairro (cod_bairro);
+ 
+ALTER TABLE Semáforo ADD CONSTRAINT FK_Semáforo_2
+    FOREIGN KEY (rua_semaforo)
+    REFERENCES Rua (cod_rua);
+ 
+ALTER TABLE Semáforo ADD CONSTRAINT FK_Semáforo_3
+    FOREIGN KEY (cidade_semaforo)
+    REFERENCES Cidade (cod_cidade);
+select * from cidade
+
+
+insert into bairro (cod_bairro,nome_bairro) values (27,'Serra Leoa'),(14,'Catedral'),(29,'Numancia'),(56,'Posto Esso'),(76,'Ypiranga'),(12,'Novo Horizonte'),(127,'Costa Bela'),(46,'Nova Almeida'),(99,'Moreto'),(2,'Camburi');
+insert into cidade (cod_cidade,nome_cidade) values (22,'Serra'),(47,'São Mateus'),(52,'Afonso Cláudio');
+insert into rua (cod_rua,nome_rua) values (454,'Xingu'),(325,'Manjerica'),(751,'Florechal'),(299,'Brasiliense'),(874,'Pavilha'),(856,'Moreto'),(798,'Porto Belo');
+
+insert into semáforo (numero_semaforo,rua_semaforo,bairro_semaforo,cidade_semaforo,quant_sema_vinc,tempo_fechado) values (21,454,27,22,5,18);
+insert into semáforo (numero_semaforo,rua_semaforo,bairro_semaforo,cidade_semaforo,quant_sema_vinc,tempo_fechado) values (88,454,27,22,214,12);
+insert into semáforo (numero_semaforo,rua_semaforo,bairro_semaforo,cidade_semaforo,quant_sema_vinc,tempo_fechado) values (47,325,27,22,454,8);
+insert into semáforo (numero_semaforo,rua_semaforo,bairro_semaforo,cidade_semaforo,quant_sema_vinc,tempo_fechado) values (1541,751,56,47,4,32);
+insert into semáforo (numero_semaforo,rua_semaforo,bairro_semaforo,cidade_semaforo,quant_sema_vinc,tempo_fechado) values (14,751,56,47,498,47);
+insert into semáforo (numero_semaforo,rua_semaforo,bairro_semaforo,cidade_semaforo,quant_sema_vinc,tempo_fechado) values (74,874,56,47,12,44);
+insert into semáforo (numero_semaforo,rua_semaforo,bairro_semaforo,cidade_semaforo,quant_sema_vinc,tempo_fechado) values (31,856,56,52,22,10);
+insert into semáforo (numero_semaforo,rua_semaforo,bairro_semaforo,cidade_semaforo,quant_sema_vinc,tempo_fechado) values (985,874,99,22,532,35);
+insert into semáforo (numero_semaforo,rua_semaforo,bairro_semaforo,cidade_semaforo,quant_sema_vinc,tempo_fechado) values (975,798,2,52,52,16);
+insert into semáforo (numero_semaforo,rua_semaforo,bairro_semaforo,cidade_semaforo,quant_sema_vinc,tempo_fechado) values (169,751,76,22,47,38);
+
+insert into sensor(minuto_reg,hora_reg,quant_carro_rua_min,quant_carro_hr_med,med_quant_carro_dia,data_analise,velocidade_med,cod_sensor) values(23,5,17,24,36,'18/05/2018',57,13);
+insert into sensor(minuto_reg,hora_reg,quant_carro_rua_min,quant_carro_hr_med,med_quant_carro_dia,data_analise,velocidade_med,cod_sensor) values(24,4,25,26,38,'18/05/2018',52,23);
+insert into sensor(minuto_reg,hora_reg,quant_carro_rua_min,quant_carro_hr_med,med_quant_carro_dia,data_analise,velocidade_med,cod_sensor) values(29,1,48,68,52,'24/06/2018',60,12);
+insert into sensor(minuto_reg,hora_reg,quant_carro_rua_min,quant_carro_hr_med,med_quant_carro_dia,data_analise,velocidade_med,cod_sensor) values(3,null,3,14,7,'09/07/2018',54,43);
+insert into sensor(minuto_reg,hora_reg,quant_carro_rua_min,quant_carro_hr_med,med_quant_carro_dia,data_analise,velocidade_med,cod_sensor) values(21,null,6,16,5,'09/07/2018',40,1123);
+insert into sensor(minuto_reg,hora_reg,quant_carro_rua_min,quant_carro_hr_med,med_quant_carro_dia,data_analise,velocidade_med,cod_sensor) values(45,1,5,19,11,'09/07/2018',39,4);
+insert into sensor(minuto_reg,hora_reg,quant_carro_rua_min,quant_carro_hr_med,med_quant_carro_dia,data_analise,velocidade_med,cod_sensor) values(12,7,47,52,61,'10/10/2010',49,20);
+insert into sensor(minuto_reg,hora_reg,quant_carro_rua_min,quant_carro_hr_med,med_quant_carro_dia,data_analise,velocidade_med,cod_sensor) values(59,null,19,29,15,'18/05/2018',31,5);
+insert into sensor(minuto_reg,hora_reg,quant_carro_rua_min,quant_carro_hr_med,med_quant_carro_dia,data_analise,velocidade_med,cod_sensor) values(59,7,58,47,49,'19/05/2018',46,1);
+insert into sensor(minuto_reg,hora_reg,quant_carro_rua_min,quant_carro_hr_med,med_quant_carro_dia,data_analise,velocidade_med,cod_sensor) values(1,null,2,5,16,'25/02/2020',31,434);
+
+insert into usuário (nome_usuario,senha_usuario,cod_usuario) values ('Geovani','hsbc456',1234);
+insert into usuário (nome_usuario,senha_usuario,cod_usuario) values ('Marcos','20210',123);
+insert into usuário (nome_usuario,senha_usuario,cod_usuario) values (0,0,0);
+insert into usuário (nome_usuario,senha_usuario,cod_usuario) values ('Flávia','47648',542);
+insert into usuário (nome_usuario,senha_usuario,cod_usuario) values ('Adriana','perabanana',7894);
+insert into usuário (nome_usuario,senha_usuario,cod_usuario) values ('Carlos','jhs4445',2684);
+insert into usuário (nome_usuario,senha_usuario,cod_usuario) values ('Matusa','18961',414);
+insert into usuário (nome_usuario,senha_usuario,cod_usuario) values ('Geovani','hsbc456',12344);
+insert into usuário (nome_usuario,senha_usuario,cod_usuario) values ('Carleto','l2r2bate',1235);
+
+DROP TABLE semáforo ;
+DROP TABLE cidade ;
+
+
+CREATE TABLE Semaforo (
+    numero_semaforo int PRIMARY KEY,
+    rua_semaforo int,
+    bairro_semaforo int,
+    cidade_semaforo int,
+    quant_sema_vinc int,
+    tempo_fechado int
+);
+
+CREATE TABLE Cidade (
+    cod_cidade int PRIMARY KEY,
+    nome_cidade varchar(50)
+);
+
+insert into cidade (cod_cidade,nome_cidade) values (22,'Serra'),(47,'São Mateus'),(52,'Afonso Cláudio');
+insert into semaforo (numero_semaforo,rua_semaforo,bairro_semaforo,cidade_semaforo,quant_sema_vinc,tempo_fechado) values (21,454,27,22,5,18);
+insert into semaforo (numero_semaforo,rua_semaforo,bairro_semaforo,cidade_semaforo,quant_sema_vinc,tempo_fechado) values (88,454,27,22,4,12);
+insert into semaforo (numero_semaforo,rua_semaforo,bairro_semaforo,cidade_semaforo,quant_sema_vinc,tempo_fechado) values (47,325,27,22,4,8);
+insert into semaforo (numero_semaforo,rua_semaforo,bairro_semaforo,cidade_semaforo,quant_sema_vinc,tempo_fechado) values (1541,751,56,47,4,32);
+insert into semaforo (numero_semaforo,rua_semaforo,bairro_semaforo,cidade_semaforo,quant_sema_vinc,tempo_fechado) values (14,751,56,47,4,47);
+insert into semaforo (numero_semaforo,rua_semaforo,bairro_semaforo,cidade_semaforo,quant_sema_vinc,tempo_fechado) values (74,7512,56,47,12,44);
+insert into semaforo (numero_semaforo,rua_semaforo,bairro_semaforo,cidade_semaforo,quant_sema_vinc,tempo_fechado) values (31,19,299,272,22,10);
+insert into semaforo (numero_semaforo,rua_semaforo,bairro_semaforo,cidade_semaforo,quant_sema_vinc,tempo_fechado) values (985,874,97,27,52,35);
+insert into semaforo (numero_semaforo,rua_semaforo,bairro_semaforo,cidade_semaforo,quant_sema_vinc,tempo_fechado) values (975,856,99,27,52,16);
+insert into semaforo (numero_semaforo,rua_semaforo,bairro_semaforo,cidade_semaforo,quant_sema_vinc,tempo_fechado) values (169,798,56,27,47,38);
