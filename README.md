@@ -124,23 +124,48 @@ Sugestão: https://balsamiq.com/products/mockups/<br>
 #### 9.1	CONSULTAS DAS TABELAS COM TODOS OS DADOS INSERIDOS (Todas) <br>
 #### 9.2	CONSULTAS DAS TABELAS COM FILTROS WHERE (Mínimo 4)<br>
     select * from usuário where cod_usuario = 123
+    https://github.com/semaforup/trabalho01/blob/master/imagens/print%20where/where2.png
+    
     select * from usuário where nome_usuario = 'Geovani';
+    
+    https://github.com/semaforup/trabalho01/blob/master/imagens/print%20where/where3.png
     select * from usuário where nome_usuario = 'Marcos';
+    
+    https://github.com/semaforup/trabalho01/blob/master/imagens/print%20where/where4.png
     select * from rua where cod_rua = 454;
 #### 9.3	CONSULTAS QUE USAM OPERADORES LÓGICOS, ARITMÉTICOS E TABELAS OU CAMPOS RENOMEADOS (Mínimo 11)
     select * from usuário where rua_semaforo > 500 and rua_semaforo < 800;
+    https://github.com/semaforup/trabalho01/blob/master/imagens/print%20where/isnot1.png
+    
     select * from rua where cod_rua > 200 and cod_rua<700
+    https://github.com/semaforup/trabalho01/blob/master/imagens/print%20where/isnot2.png
+    
     select * from rua where cod_rua > 400 and cod_rua<900
+    https://github.com/semaforup/trabalho01/blob/master/imagens/print%20where/isnot3.png
+    
     select * from cidade where cod_cidade = 22 or cod_cidade=47
+    https://github.com/semaforup/trabalho01/blob/master/imagens/print%20where/isnot4.png
+    
     select nome_cidade from cidade where cod_cidade > 40
+    https://github.com/semaforup/trabalho01/blob/master/imagens/print%20where/isnot5.png
     
     select * from usuário where rua_semaforo > 500 and rua_semaforo < 800;
+    https://github.com/semaforup/trabalho01/blob/master/imagens/print%20where/isnot1.png
+    
     select * from semaforo where tempo_fechado < 20
+    https://github.com/semaforup/trabalho01/blob/master/imagens/print%20where/as3.png
+    
     select * from semaforo where tempo_fechado < 30
+    https://github.com/semaforup/trabalho01/blob/master/imagens/print%20where/as3.png
     
     select * from bairro as bar where nome_bairro = 'Serra Leoa'
+    https://github.com/semaforup/trabalho01/blob/master/imagens/print%20where/as1.png
+    
     select * from cidade as city where cod_cidade > 40
+    https://github.com/semaforup/trabalho01/blob/master/imagens/print%20where/as2.png
+    
     select * from semaforo as sinal where tempo_fechado < 20
+    https://github.com/semaforup/trabalho01/blob/master/imagens/print%20where/as3.png
     
 #### 9.4	CONSULTAS QUE USAM OPERADORES LIKE E DATAS (Mínimo 12) <br>
     a) Criar outras 5 consultas que envolvam like ou ilike
