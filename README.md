@@ -62,23 +62,16 @@ Sugestão: https://balsamiq.com/products/mockups/<br>
 ![Modelo Conceitual](https://github.com/semaforup/trabalho01/blob/master/imagens/Conceitual_1.png "Modelo Conceitual")
 
    
-#### 5.1 Validação do Modelo Conceitual
-    [Grupo01]: [Nomes dos que participaram na avaliação]
-    [Grupo02]: [Nomes dos que participaram na avaliação]
 ## Marco de Entrega 01 em: (20/04/2018)<br>
 #### 5.2 DECISÕES DE PROJETO
-    [atributo]: [descrição da decisão]
     
     EXEMPLO:
     a) Campo endereço: em nosso projeto optamos por um campo multivalorado e composto, pois a empresa 
     pode possuir para cada departamento mais de uma localização... 
     b) justifique!
 
+
 #### 5.3 DESCRIÇÃO DOS DADOS 
-    [objeto]: [descrição do objeto]
-    
-    EXEMPLO:
-    CLIENTE: Tabela que armazena as informações relativas ao cliente<br>
     CPF: campo que armazena o número de Cadastro de Pessoa Física para cada cliente da empresa.<br>
     numero_semaforo: Campo que armazena o código de identificação do semáforo
     rua_semaforo: Campo que armazena o nome da rua em que o semáforo foi localizado
@@ -130,10 +123,25 @@ Sugestão: https://balsamiq.com/products/mockups/<br>
     OBS: Incluir para cada tópico as instruções SQL + imagens (print da tela) mostrando os resultados.<br>
 #### 9.1	CONSULTAS DAS TABELAS COM TODOS OS DADOS INSERIDOS (Todas) <br>
 #### 9.2	CONSULTAS DAS TABELAS COM FILTROS WHERE (Mínimo 4)<br>
+    select * from usuário where cod_usuario = 123
+    select * from usuário where nome_usuario = 'Geovani';
+    select * from usuário where nome_usuario = 'Marcos';
+    select * from rua where cod_rua = 454;
 #### 9.3	CONSULTAS QUE USAM OPERADORES LÓGICOS, ARITMÉTICOS E TABELAS OU CAMPOS RENOMEADOS (Mínimo 11)
-    a) Criar 5 consultas que envolvam os operadores lógicos AND, OR e Not
-    b) Criar no mínimo 3 consultas com operadores aritméticos 
-    c) Criar no mínimo 3 consultas com operação de renomear nomes de campos ou tabelas
+    select * from usuário where rua_semaforo > 500 and rua_semaforo < 800;
+    select * from rua where cod_rua > 200 and cod_rua<700
+    select * from rua where cod_rua > 400 and cod_rua<900
+    select * from cidade where cod_cidade = 22 or cod_cidade=47
+    select nome_cidade from cidade where cod_cidade > 40
+    
+    select * from usuário where rua_semaforo > 500 and rua_semaforo < 800;
+    select * from semaforo where tempo_fechado < 20
+    select * from semaforo where tempo_fechado < 30
+    
+    select * from bairro as bar where nome_bairro = 'Serra Leoa'
+    select * from cidade as city where cod_cidade > 40
+    select * from semaforo as sinal where tempo_fechado < 20
+    
 #### 9.4	CONSULTAS QUE USAM OPERADORES LIKE E DATAS (Mínimo 12) <br>
     a) Criar outras 5 consultas que envolvam like ou ilike
     b) Criar uma consulta para cada tipo de função data apresentada.
@@ -141,12 +149,13 @@ Sugestão: https://balsamiq.com/products/mockups/<br>
 
     
 #### 9.5	ATUALIZAÇÃO E EXCLUSÃO DE DADOS (Mínimo 6)<br>
-
-
-#### 9.6	CONSULTAS COM JUNÇÃO E ORDENAÇÃO (Mínimo 6)<br>
-        a) Uma junção que envolva todas as tabelas possuindo no mínimo 3 registros no resultado
-        b) Outras junções que o grupo considere como sendo as de principal importância para o trabalho
-        
+    DROP TABLE bairro ;
+    DROP TABLE semáforo ;
+    DROP TABLE cidade ;
+    ALTER TABLE cidade DROP cod_cidade;
+    update bairro set cod_bairro =88 where cod_bairro = 14;  
+    update bairro DROP nome_bairro;  
+ 
 
 ## Marco de Entrega 02 em: (16/06/2018)<br>
 ### ATUALIZAÇÃO DA DOCUMENTAÇÃO DOS SLIDES PARA APRESENTAÇAO SEMESTRAL (Mínimo 6 e Máximo 10)<br>
