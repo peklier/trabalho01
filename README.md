@@ -63,22 +63,10 @@ Sugestão: https://balsamiq.com/products/mockups/<br>
     
 >## Marco de Entrega 01 em: (24/03/2018)<br>
 
-### 5.MODELO CONCEITUAL<br>
-    A) NOTACAO ENTIDADE RELACIONAMENTO 
-        * Para nosso prótótipo limitaremos o modelo conceitual nas 5 principais entidades do escopo
-        * O protótipo deve possui no mínimo duas relações N para N
-        * o mínimo de entidades do modelo conceitual será igual a 5
-        
-![Alt text](https://raw.githubusercontent.com/semaforup/trabalho01/master/imagens/modelo_conceitual_empresa.png "Modelo Conceitual")
-    
-    B) NOTACAO UML (Caso esteja fazendo a disciplina de analise)
-    C) QUALIDADE 
-        Garantir que a semântica dos atributos seja clara no esquema
-        Criar o esquema de forma a garantir a redução de informação redundante, possibilidade de valores null, 
-        e tuplas falsas
-    
-        
-    
+### 5.MODELO CONCEITUAL<br>    
+![Modelo Conceitual](https://github.com/semaforup/trabalho01/blob/master/imagens/Conceitual_1.png "Modelo Conceitual")
+
+   
 #### 5.1 Validação do Modelo Conceitual
     [Grupo01]: [Nomes dos que participaram na avaliação]
     [Grupo02]: [Nomes dos que participaram na avaliação]
@@ -113,11 +101,7 @@ Sugestão: https://balsamiq.com/products/mockups/<br>
 (https://github.com/semaforup/trabalho01/blob/master/arquivos/insert_fisico "Insert+Modfis")
 
 #### 8.3 INCLUSÃO DO SCRIPT PARA EXCLUSÃO DE TABELAS EXISTENTES, CRIAÇÃO DE TABELA NOVAS E INSERÇÃO DOS DADOS
-        a) Junção dos scripts anteriores em um único script 
-        (Drop table + Create de tabelas e estruturas de dados + dados a serem inseridos)
-        b) Criar um novo banco de dados para testar a restauracao 
-        (em caso de falha na restauração o grupo não pontuará neste quesito)
-        c) formato .SQL
+(https://github.com/semaforup/trabalho01/blob/master/arquivos/drop_insert_fisico.txt "Insert,Modelo Fisico,Drop")
 
 
 ### 9	TABELAS E PRINCIPAIS CONSULTAS<br>
