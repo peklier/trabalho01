@@ -63,6 +63,12 @@ Sugestão: https://balsamiq.com/products/mockups/<br>
 ### 5.MODELO CONCEITUAL<br>    
 ![Modelo Conceitual](https://github.com/semaforup/trabalho01/blob/master/imagens/Conceitual_4.png "Modelo Conceitual")
 
+### 5.1 Validação do Modelo Conceitual<br>
+[Grupo 01] : [Júlia Ferreira, Kézia Souza, Mariana Poli]
+[Grupo 02] : [Rafael Rodriguez, Leonardo Fafá]
+
+
+
    
 ## Marco de Entrega 01 em: (20/04/2018)<br>
 #### 5.2 DECISÕES DE PROJETO
