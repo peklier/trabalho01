@@ -27,15 +27,22 @@ Sugestão: https://balsamiq.com/products/mockups/<br>
 
 
 #### 4.1 TABELA DE DADOS DO SISTEMA: ✔  
-![Tabela](https://github.com/semaforup/trabalho01/blob/master/arquivos/TabelaSemaforup%20(1).xlsx "Modelo Conceitual")    
+![Tabela](https://github.com/semaforup/trabalho01/blob/master/arquivos/TabelaSemaforup%20(1).xlsx "Tabela")    
+![Documento Jupyter](https://github.com/semaforup/trabalho01/blob/master/arquivos/semaforup.ipynb ".ipynb")    
+![PDF Jupyter](https://github.com/semaforup/trabalho01/blob/master/arquivos/semaforup.pdf ".pdf")    
     
     
 #### 4.2 QUAIS PERGUNTAS PODEM SER RESPONDIDAS COM O SISTEMA PROPOSTO? ✔
-1)qual a quantidade de veículos que passam em um determinado semáforo em um ano?
-2)em quais locaos houve maior quantidade de veículos em uma semana?
-3)quantos usuários acessaram o sistema em 3 dias?
-4)quantos semáforos há em um determinado bairro?
-5)quantos carros ultrapassaram uma determinada velocidade em determinado logradouro?
+    1)qual a quantidade de veículos que passam em um determinado semáforo em um ano?
+    2)em quais locais houve maior quantidade de veículos em uma semana?
+    3)quantos usuários acessaram o sistema em 3 dias?
+    4)quantos semáforos há em um determinado bairro?
+    5)quantos carros ultrapassaram uma determinada velocidade em determinado logradouro?
+    6)quais os periodos que há maior fluxo de carros
+    7)em quais períodos há mais engarrafamento
+    8)quantos usuarios consultaram um local
+    9)quantos usuarios utilizam o sistema
+    10)qual a velocidade média de um logradouro
 
 
 ### 5.MODELO CONCEITUAL<br> ✔
